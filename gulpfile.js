@@ -112,4 +112,8 @@ gulp.task('json', function() {
     .pipe(connect.reload())
 });
 
+gulp.task('log', function() {
+  gutil.log('Workflows are awesome');
+});
+
 gulp.task('default', ['html', 'json', 'coffee', 'js', 'compass', 'images', 'connect', 'watch']);
